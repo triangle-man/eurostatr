@@ -1,13 +1,13 @@
 Package: eurostatr
 Title: Data import from Eurostat
 Version: 0.1
-Authors@R: c(person("James", "Geddes", role = c("aut", "cre"),
-    email = "james@jamesgeddes.org"))
 Description: Functions to assist with importing data from Eurostat.
+Author: James Geddes
+Maintainer: James Geddes <james@jamesgeddes.org>
 Depends:
     R (>= 3.1.0)
 Imports:
     dplyr (>= 0.2),
     tidyr (>= 0.1)
-License: MIT
+License: MIT + file LICENSE
 LazyData: true

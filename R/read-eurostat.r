@@ -34,6 +34,8 @@
 ##' @param value.name The name to be given, in the resulting data frame, to the
 ##' variable given by this dataset.
 ##' @return A data frame in "tidy" format.
+##' @examples
+##' \dontrun{nrg <- read.eurostat("nrg_100a.tsv", value.name = "energy")}
 ##' @export
 read.eurostat <- function(file, value.name = "value") {
     read.delim(file = file,

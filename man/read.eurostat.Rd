@@ -12,10 +12,10 @@ read.eurostat(file, value.name = "value")
 variable given by this dataset.}
 }
 \value{
-A data frame.
+A data frame in "tidy" format.
 }
 \description{
-Loads in and reformats a Eurostat data table as a data frame in "tidy" format.
+Read a Eurostat data file and reformat as a data frame in "tidy" format.
 }
 \details{
 A Eurostat data table is a tab-separated-values file, having the structure
@@ -45,5 +45,8 @@ has \eqn{N-1} names separated by commas, a backslash, and one more name.
 It is not clear to me what happens in the case \eqn{N < 2}.
 
 Missing values are denoted in Eurostat data tables by the character \code{:}
+}
+\examples{
+\dontrun{nrg <- read.eurostat("nrg_100a.tsv", value.name = "energy")}
 }
 
