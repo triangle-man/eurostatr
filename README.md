@@ -41,7 +41,7 @@ Converting the downloaded data to R
 Run `read.eurostat()` on the `.tsv` file resulting from gunzipping the
 downloaded file:
 ```{r}
-nrg <- read.eurostat("nrg_100a.tsv, value.name = "energy")
+nrg <- read.eurostat("nrg_100a.tsv", value.name = "energy")
 ```
 
 See also
